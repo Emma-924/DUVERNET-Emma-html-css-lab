@@ -1,0 +1,190 @@
+/* Q#: All the elements have margin of 0 from the top, bottom, left, and right */
+* {
+  margin: 0;
+}
+
+/* Q1: Display all HTML5 semantic elements as block-level elements */
+article,
+aside,
+nav,
+section,
+header,
+footer,
+main,
+figure,
+figcaption {
+  display: block;
+}
+
+/* Q2: Style the body: set text color, background image, sans-serif font stack (3+ options), and margin 0 */
+body {
+  color: #2d363b;
+  background-image: url("../assets/images/dark-wood2.jpg");
+  font-family: "Segoe UI", Arial, Tahoma, sans-serif;
+  margin: 0;
+}
+
+/* Q3: Style .container: set width (~950px), 5px vertical margin, center horizontally, text align center, and background color */
+.container {
+  width: 950px;
+  margin: 5px auto;
+  text-align: center;
+  background-color: #f9f6ef;
+}
+
+/* Q4: Style .content: line-height of 1.4em and 10px padding */
+.content {
+  line-height: 1.4em;
+  padding: 10px;
+}
+
+/* Q5: Style header, nav, and footer: share the same background and text colors */
+header,
+nav,
+footer {
+  background-color: #e6e2c3;
+  color: #2d363b;
+}
+
+/* Q6: Style the <nav> unordered list: remove default margin/padding, display flex, remove list bullets, and center items */
+nav ul {
+  margin: 0;
+  padding: 5px;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+
+/* Q7: Style the navigation list items: display horizontally, 40px right margin, and uppercase text */
+nav li {
+  margin-right: 40px;
+  text-transform: uppercase;
+}
+
+/* Q8: Style navigation links with pseudo-classes: set colors for link, visited, hover, and active states */
+nav a:link {
+  color: #2a9d8f;
+}
+nav a:visited {
+  color: #206060;
+}
+nav a:hover {
+  color: #a3ba20;
+}
+nav a:active {
+  color: #0d1768;
+}
+
+/* Q9: Style any anchor (<a>) element: set color and remove underline */
+a {
+  color: #2a9d8f;
+  text-decoration: none;
+}
+
+/* Q10: Style the headings h1, h2, and h3: set 10px margin, uppercase text, and distinct colors */
+h1,
+h2,
+h3 {
+  margin: 10px;
+  text-transform: uppercase;
+}
+h1 {
+  color: #a3ba20;
+}
+h2 {
+  color: #0d1768;
+}
+h3 {
+  color: #2a9d8f;
+}
+
+/* Q11: Style .img-centre: center the image horizontally, set 5px top/bottom margin, and 2px padding */
+.img-centre {
+  display: block;
+  margin: 5px auto;
+  padding: 2px;
+}
+
+/* Q12: Style audio and video elements: center horizontally with 10px top/bottom margin */
+audio,
+video {
+  display: block;
+  margin: 10px auto;
+}
+
+/* Q13: Style any table: set width to 800px, center horizontally with 10px vertical margin, and collapse borders */
+table {
+  width: 800px;
+  margin: 10px auto;
+  border-collapse: collapse;
+}
+
+/* Q14: Style table cells (td and th): set border, padding, and a light background color */
+table td,
+table th {
+  border: 2px solid #a3ba20;
+  padding: 2px 5px;
+  background-color: #e6e2c3;
+}
+
+/* Q15: Style table headers (th) and tfoot cells: uppercase text, background color, and text color */
+table th,
+tfoot td {
+  text-transform: uppercase;
+  background-color: #a3ba20;
+  color: #ffffff;
+}
+
+/* Q16: Style the dt element: set bold font weight */
+dt {
+  font-weight: bold;
+}
+
+/* Q17: Style the footer element: set font size to 80%, center text, add 1px top/bottom padding, and set background/text colors */
+footer {
+  font-size: 80%;
+  text-align: center;
+  padding: 1px 0;
+  background-color: #e6e2c3;
+  color: #2d363b;
+}
+
+/* Q18: Style the iframe element: center horizontally and add 10px top/bottom margin */
+iframe {
+  display: block;
+  margin: 10px auto;
+}
+
+/* Q19: Style the fieldset element: set width to 500px, 20px top/bottom margin, center horizontally, add border, and set background color */
+fieldset {
+  width: 500px;
+  margin: 20px auto;
+  border: 2px solid #a3ba20;
+  background-color: #f9f6ef;
+}
+
+/* Q20: Style the legend element: italic font style, set background/text color, set margins and padding, and add border radius */
+legend {
+  font-style: italic;
+  background-color: #2a9d8f;
+  color: #ffffff;
+  margin: 0 10px;
+  padding: 0 5px;
+  border-radius: 20px;
+}
+
+/* Q21: Style input elements of type submit: set border, padding, background color, text color, and border radius */
+input[type="submit"] {
+  border: 2px solid #a3ba20;
+  padding: 5px;
+  background-color: #a3ba20;
+  color: #ffffff;
+  border-radius: 6px;
+}
+
+/* Q22: Style input[type="submit"] hover state: change background/text color and set pointer cursor */
+input[type="submit"]:hover {
+  background-color: #2a9d8f;
+  color: #ffffff;
+  cursor: pointer;
+}
